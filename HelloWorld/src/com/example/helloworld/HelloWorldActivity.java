@@ -54,7 +54,9 @@ public class HelloWorldActivity extends ActionBarActivity {
 	    	public void onClick(View view)
 	    	{
 	    		EditText clearEditText = (EditText)findViewById(R.id.editTextName);
+	    		EditText clearEditTextLastName = (EditText)findViewById(R.id.editTextLastName);
 	    		clearEditText.setText("");
+	    		clearEditTextLastName.setText("");
 	    		TextView clearTextDisplay = (TextView)findViewById(R.id.textViewDisplay);
 	    		clearTextDisplay.setText("Hello world!");
 	    	}
@@ -67,8 +69,9 @@ public class HelloWorldActivity extends ActionBarActivity {
 	    	 @Override
 	    	 public void onClick(View arg0){
 	    		 EditText editName = (EditText)findViewById(R.id.editTextName);
+	    		 EditText editLastName = (EditText)findViewById(R.id.editTextLastName);
 	    		 TextView textDisplay = (TextView)findViewById(R.id.textViewDisplay);
-	    		 String nameToDisplay = editName.getText().toString();
+	    		 String nameToDisplay = editName.getText().toString() + " " + editLastName.getText().toString();
 	    		 textDisplay.setText("Hello " + nameToDisplay + "!");
 	    	 }
 	     });

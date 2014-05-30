@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+C:\barb_workspace\.metadata\.plugins\org.eclipse.jdt.core
+4168096225.index
+3845599538.index
+1284074322.index
+2323849240.index
+2380175872.index
